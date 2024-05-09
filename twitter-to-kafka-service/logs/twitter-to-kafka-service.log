@@ -10,3 +10,13 @@
 2024-05-09 15:41:07 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet magna dolor consectetuer Fusce ultricies consectetuer Microservices elit massa amet magna consectetuer
 2024-05-09 15:41:17 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa adipiscing consectetuer magna Microservices magna ipsum
 2024-05-09 15:41:27 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer ultricies elit adipiscing Lorem Microservices adipiscing congue dolor
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on Allisons-MacBook-Pro.local with PID 31311 (/Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices/twitter-to-kafka-service/target/classes started by alimhtsai in /Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices)
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.347 seconds (JVM running for 0.696)
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2024-05-09 15:59:28 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2024-05-09 15:59:28 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit libero adipiscing Lorem Kafka Fusce malesuada
+2024-05-09 15:59:38 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar Fusce libero Lorem adipiscing Java Fusce congue elit
+2024-05-09 15:59:48 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit consectetuer libero lectus massa adipiscing porttitor Elasticsearch porttitor consectetuer ultricies purus purus sit
