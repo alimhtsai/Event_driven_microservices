@@ -1,21 +1,12 @@
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on Allisons-MacBook-Pro.local with PID 62204 (/Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices/twitter-to-kafka-service/target/classes started by alimhtsai in /Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices)
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.322 seconds (JVM running for 0.599)
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2024-05-08 16:05:23 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
-2024-05-08 16:05:23 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna magna magna Lorem Java porttitor ipsum purus
-2024-05-08 16:05:33 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere posuere posuere posuere lectus Lorem Java adipiscing pulvinar elit sed
-2024-05-08 16:05:43 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet massa congue ipsum Elasticsearch ipsum porttitor
-2024-05-08 16:05:53 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada magna massa ultricies Java purus pulvinar
-2024-05-08 16:06:03 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed Maecenas amet ipsum amet sed sit adipiscing Elasticsearch elit adipiscing sit Fusce ipsum ipsum Maecenas
-2024-05-08 16:29:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on Allisons-MacBook-Pro.local with PID 80514 (/Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices/twitter-to-kafka-service/target/classes started by alimhtsai in /Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices)
-2024-05-08 16:29:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2024-05-08 16:29:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.353 seconds (JVM running for 0.744)
-2024-05-08 16:29:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2024-05-08 16:29:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2024-05-08 16:29:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2024-05-08 16:29:25 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
-2024-05-08 16:29:25 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere libero ultricies porttitor amet pulvinar dolor Elasticsearch sed posuere massa adipiscing sit
-2024-05-08 16:29:35 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor dolor dolor congue magna pulvinar Kafka malesuada porttitor adipiscing Maecenas Fusce
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on Allisons-MacBook-Pro.local with PID 19747 (/Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices/twitter-to-kafka-service/target/classes started by alimhtsai in /Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices)
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.294 seconds (JVM running for 0.573)
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2024-05-09 15:40:47 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2024-05-09 15:40:47 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor consectetuer adipiscing massa Maecenas pulvinar pulvinar purus Elasticsearch libero pulvinar sed purus Lorem purus consectetuer
+2024-05-09 15:40:57 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar dolor dolor posuere sed Kafka sit magna magna
+2024-05-09 15:41:07 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet magna dolor consectetuer Fusce ultricies consectetuer Microservices elit massa amet magna consectetuer
+2024-05-09 15:41:17 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa adipiscing consectetuer magna Microservices magna ipsum
+2024-05-09 15:41:27 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer ultricies elit adipiscing Lorem Microservices adipiscing congue dolor
