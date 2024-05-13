@@ -66,9 +66,61 @@
 		</repository>
 	</repositories>
 
+	<dependencies>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+		</dependency>
+	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- LOCAL -->
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>mdc-interceptor</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-web-client-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-service-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>common-util</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-config</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-index-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>kafka-consumer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.microservices.demo</groupId>
 				<artifactId>app-config-data</artifactId>
@@ -123,6 +175,30 @@
 
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-gateway</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
+				<version>${spring-cloud-starter-circuitbreaker-reactor-resilience4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-config-server</artifactId>
 				<version>${spring-cloud.version}</version>
 			</dependency>
@@ -131,6 +207,24 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-config</artifactId>
 				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-loadbalancer</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-sleuth</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-zipkin</artifactId>
+				<version>${spring-cloud-starter-zipkin.version}</version>
 			</dependency>
 
 			<dependency>
@@ -153,7 +247,19 @@
 
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-webflux</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
 				<version>${spring-boot.version}</version>
 			</dependency>
 
@@ -174,6 +280,24 @@
 				<groupId>org.apache.avro</groupId>
 				<artifactId>avro</artifactId>
 				<version>${avro.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.elasticsearch</groupId>
+				<artifactId>elasticsearch</artifactId>
+				<version>${elastic.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.elasticsearch.client</groupId>
+				<artifactId>elasticsearch-rest-high-level-client</artifactId>
+				<version>${elastic.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${springdoc-openapi-ui.version}</version>
 			</dependency>
 
 			<dependency>
@@ -198,6 +322,48 @@
 						<artifactId>swagger-core</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>io.confluent</groupId>
+				<artifactId>kafka-streams-avro-serde</artifactId>
+				<version>${kafka-streams-avro-serde.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-streams</artifactId>
+				<version>${kafka-streams.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-clients</artifactId>
+				<version>${kafka-clients.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${postgresql.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+				<version>${micrometer-registry-prometheus.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.logstash.logback</groupId>
+				<artifactId>logstash-logback-encoder</artifactId>
+				<version>${logstash-logback-encoder.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.annotation</groupId>
+				<artifactId>javax.annotation-api</artifactId>
+				<version>1.3.2</version>
 			</dependency>
 
 		</dependencies>
