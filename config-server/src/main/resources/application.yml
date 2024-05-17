@@ -13,7 +13,7 @@ spring:
     config:
       server:
         git:
-#          uri: file:C:\Users\Enis Halilaj\Desktop\twitterv2\config-server-repository
-          uri: file://Users/alimhtsai/Documents/ucimswe/6_side_project/Event_driven_microservices/config-server-repository
+          uri: https://github.com/alimhtsai/spring-cloud-config-server-repository
+          default-label: main
           clone-on-start: true
     fail-fast: true
