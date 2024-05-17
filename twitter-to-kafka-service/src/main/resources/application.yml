@@ -8,3 +8,14 @@ spring:
   cloud:
     config:
       name: twitter-to-kafka-service,config-client
+      username: spring_cloud_user
+      password: '{cipher}0bb12521039f05889749bd60dc24c8bd574e2e3a6584d79df59019aa5cbb61a763656aae22e44eda564da71a58734b0a'
+
+log:
+  app-name: twitter-to-kafka-service
+
+twitter-to-kafka-service:
+  enable-mock-tweets: true
+
+encrypt:
+  key: 'Demo_Pwd!2024'
