@@ -13,7 +13,11 @@
 		<module>config-server</module>
 		<module>kafka/kafka-consumer</module>
         <module>kafka-to-elastic-service</module>
-    </modules>
+        <module>elastic</module>
+		<module>elastic/elastic-config</module>
+		<module>elastic/elastic-model</module>
+		<module>elastic/elastic-index-client</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
