@@ -1,4 +1,4 @@
-package com.microservices.demo;
+package com.microservices.demo.kafka.consumer.config;
 
 import com.microservices.demo.config.KafkaConfigData;
 import com.microservices.demo.config.KafkaConsumerConfigData;
@@ -64,7 +64,5 @@ public class KafkaConsumerConfig<K extends Serializable, V extends SpecificRecor
         factory.setAutoStartup(kafkaConsumerConfigData.getAutoStartup());
         factory.getContainerProperties().setPollTimeout(kafkaConsumerConfigData.getPollTimeoutMs());
         return factory;
-
-
     }
 }

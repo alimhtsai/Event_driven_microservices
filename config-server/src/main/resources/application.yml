@@ -15,7 +15,7 @@ spring:
         git:
           uri: https://github.com/alimhtsai/spring-cloud-config-server-repository
           username: alimhtsai
-          password: '*****'
+          password: '****'
           default-label: main
           clone-on-start: true
     fail-fast: true
