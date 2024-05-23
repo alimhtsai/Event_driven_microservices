@@ -16,7 +16,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.util.Objects;
 
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "com.microservices.demo.elastic.index.client.repository")
+@EnableElasticsearchRepositories(basePackages = "com.microservices.demo.elastic")
 public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
 
     private final ElasticConfigData elasticConfigData;
@@ -37,15 +37,14 @@ public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
                 )).setRequestConfigCallback(
                         requestConfigBuilder ->
                                 requestConfigBuilder
-                                        .setConnectTimeout(elasticConfigData.getConnectionTimeout())
-                                        .setSocketTimeout(elasticConfigData.getSocketTimeout())
-
+                                    .setConnectTimeout(elasticConfigData.getConnectTimeoutMs())
+                                    .setSocketTimeout(elasticConfigData.getSocketTimeoutMs())
                 )
         );
     }
 
     @Bean
-    public ElasticsearchOperations elasticsearchTemplate() {
+    public ElasticsearchOperations elasticsearchOperations() {
         return new ElasticsearchRestTemplate(elasticsearchClient());
     }
 }
