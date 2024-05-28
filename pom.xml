@@ -17,7 +17,8 @@
 		<module>elastic/elastic-config</module>
 		<module>elastic/elastic-model</module>
 		<module>elastic/elastic-index-client</module>
-	</modules>
+        <module>elastic/elastic-query-client</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
