@@ -10,7 +10,7 @@ spring:
       name: elastic-query-service,config-client
       uri: http://localhost:8888
       username: spring_cloud_user
-      password: '{cipher}2ca52e09ec85aa620abce2e704242985bf786c9a684461b023a563b34b96c527ec81160eae48d731017c98ee0b9e1824'
+      password: '{cipher}0bb12521039f05889749bd60dc24c8bd574e2e3a6584d79df59019aa5cbb61a763656aae22e44eda564da71a58734b0a'
 
 log:
   app-name: elastic-query-service
