@@ -10,14 +10,16 @@
 
 ![microservices_20240528](https://github.com/alimhtsai/Event_driven_microservices/assets/48788292/63580b33-5ef0-492c-bfc2-76be5739a188)
 
-
 ### Live Demo
-- Containerization of two microservices (twitter-to-kafka-service and kafka-to-elastic-service) with docker images
+- Containerization of three microservices with docker images:
+  - twitter-to-kafka-service
+  - kafka-to-elastic-service
+  - elastic-query-service
 
-https://github.com/alimhtsai/Event_driven_microservices/assets/48788292/25778b79-4b47-436d-a5ba-aa1f5e11d47a
+https://github.com/alimhtsai/Event_driven_microservices/assets/48788292/e9fc58a3-5658-49b6-857e-3ed04398fd05
 
 ### TODO
-- [ ] Elastic query service
+- [x] Elastic query service
 - [ ] Reactive elastic web client service
 - [ ] Security
 - [ ] Kafak stream state store
