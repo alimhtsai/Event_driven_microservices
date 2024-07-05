@@ -5,6 +5,8 @@
 **A distributed event-driven microservices project using Spring boot, Spring cloud, Kafka and Elasticsearch**
 - Implemented CQRS and event sourcing pattern in Spring Boot, Spring Cloud, Apache Kafka, and Elasticsearch
 - Utilized mock streaming tweets as source data and Docker for microservices containerization
+- Adopted accept header/ content negotiation pattern for API versioning
+- Externalized configuration in a separate [config server repository](https://github.com/alimhtsai/spring-cloud-config-server-repository)
 
 ### Event-driven Microservices Architecture
 
